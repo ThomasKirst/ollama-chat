@@ -32,7 +32,7 @@ export async function POST(req: Request) {
             break;
           }
 
-          let json = {done: false};
+          let json = {done: false, message: {content: ""}};
           const rawjson = new TextDecoder().decode(value);
 
           try {
